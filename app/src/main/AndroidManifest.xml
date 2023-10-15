@@ -13,11 +13,8 @@
         android:theme="@style/Theme.GamerApp"
         tools:targetApi="31">
         <activity
-            android:name=".Nascar"
-            android:exported="false" />
-        <activity
             android:name=".home"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".signin"
             android:exported="true" />

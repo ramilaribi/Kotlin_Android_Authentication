@@ -1,3 +1,32 @@
 <resources>
-    <string name="app_name">Gamer App</string>
+    <string name="app_name">Nascar</string>
+
+    <string name="news">News</string>
+    <string name="store">Store</string>
+    <string name="profile">Profile</string>
+
+    <string name="store1">Red Dead Redemption 2</string>
+    <string name="store2">Grand Theft Auto </string>
+    <string name="store3">The Legend Of Zelda</string>
+    <string name="store4">HOMESTEAD-MIAMI SPEEDWAY</string>
+    <string name="eventDate1">SUN. OCT 10, 2023 | 2:00 PM ET</string>
+    <string name="eventDate2">SUN. OCT 18, 2023 | 2:00 PM ET</string>
+    <string name="eventDate3">SUN. OCT 25, 2023 | 2:30 PM ET</string>
+    <string name="eventDate4">SUN. OCT 28, 2023 | 2:30 PM ET</string>
+
+    <string name="news1">NASCAR BETTING: 2023 TALLADEGA SUPERSPEEDWAY-2 ODDS</string>
+    <string name="news2">NTruex, togetherness and Talladega: Sunday’s playoff race may hinge on team effort</string>
+    <string name="news3">Texas rattles Cup Series playoff picture once again</string>
+    <string name="newsDesc1">The NASCAR Cup Series Playoffs Round of 12 continues at Talladega Superspeedway on Sunday for the YellaWood 500 (2 p.m. ET, NBC, MRN, SiriusXM NASCAR Radio, NBC Sports App).</string>
+    <string name="newsDesc2">Martin Truex Jr. is still looking for the first Talladega Superspeedway victory of his career, and snagging one Sunday at a pivotal point in the NASCAR Cup Series Playoffs would be well-timed. The Joe Gibbs Racing veteran is also looking to right the ship in this star-crossed postseason — his four races so far have yet to produce a top-10 finish or a lap led.</string>
+    <string name="newsDesc3">Whether it’s Brad Keselowski leading almost every lap only to lose to Jimmie Johnson and not make the Championship 4 or a good old-fashioned donnybrook on pit road with a handful of playoff drivers, Texas Motor Speedway has been at the forefront of postseason theatrics since the inception of the current format in 2014.</string>
+
+    <string name="about"><b>NASCAR Cup Series</b>\n\nIn a historic shift for the sport, beginning in 2020 NASCAR’s premier series became known as the NASCAR Cup Series and featured four cornerstone brands as Premier Partners: Busch Beer, Coca-Cola®, GEICO and Xfinity. All four partners are prominently featured in multiple platforms across the sport, including integrations in broadcast, NASCAR digital and social channels, event entitlements, in-market promotions and at-track activations.</string>
+    <string name="name_here">Name Here</string>
+    <string name="email_here">Email Here</string>
+    <string name="info">Info</string>
+    <string name="logout">Logout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

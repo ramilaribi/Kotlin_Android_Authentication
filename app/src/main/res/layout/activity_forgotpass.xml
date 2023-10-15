@@ -6,7 +6,7 @@
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="200dp"
+        android:layout_width="match_parent"
         android:layout_marginTop="80dp"
         android:layout_height="80dp"
         android:layout_marginLeft="30dp"
@@ -53,12 +53,13 @@
         android:textStyle="bold"
         android:textColor="#ff0000"
         android:text="OR" />
+
     <Button
-        android:id="@+id/button"
-        android:layout_marginTop="20dp"
+        android:id="@+id/sms"
         android:layout_width="350dp"
-        android:layout_marginLeft="30dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="#ff0000"
         android:text="Send SMS" />
 </LinearLayout>

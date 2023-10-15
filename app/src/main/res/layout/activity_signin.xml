@@ -86,8 +86,8 @@
             android:layout_height="27dp"
             android:layout_marginTop="10dp"
             android:linksClickable="true"
-            android:padding="6dp"
-            android:text="by register you agree to our "
+            android:padding="2dp"
+            android:text=" by register you agree to our "
             android:textAlignment="center"
             android:textColor="#ff0000" />
         <LinearLayout
@@ -103,7 +103,7 @@
                 android:padding="6dp"
                 android:layout_marginLeft="20dp"
                 android:textAlignment="center"
-                android:text="terms et conditions"
+                android:text="    terms et conditions"
                 android:textColor="#ff0000"/>
 
             <TextView
@@ -114,7 +114,7 @@
                 android:linksClickable="true"
                 android:padding="6dp"
                 android:layout_marginLeft="10dp"
-                android:text="           Privacy Policy"
+                android:text="  Privacy Policy"
                 android:textAlignment="center"
                 android:textColor="#ff0000" />
         </LinearLayout>

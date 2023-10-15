@@ -4,12 +4,12 @@ import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Patterns
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 
@@ -23,6 +23,32 @@ class MainActivity : AppCompatActivity() {
 
         val loginButton: Button = findViewById(R.id.button)
         loginButton.setOnClickListener {
+            val email = emailEditText.text.toString()
+            val password = passwordEditText.text.toString()
+
+            // Vérifier si les champs sont vides
+            if (email.isEmpty() || password.isEmpty()) {
+                showSnackbar1("Veuillez remplir tous les champs.")
+                return@setOnClickListener
+            }
+
+            // Vérifier si l'email est au bon format
+            if (!isEmailValid(email)) {
+                showSnackbar1("Veuillez saisir un email valide.")
+                return@setOnClickListener
+            }
+            val emailPrefix = extractEmailPrefix(email)
+            // Vérifier les identifiants (remplacez par votre logique de vérification)
+            if (emailPrefix.isNotEmpty() && password == "password123") {
+                // Identifiants valides, lancer l'activité suivante (HomeActivity)
+                val intent = Intent(this, home::class.java)
+                startActivity(intent)
+            } else {
+                showSnackbar1("You have some errors in your inputs!.")
+            }
+        }
+      /*  val loginButton: Button = findViewById(R.id.button)
+        loginButton.setOnClickListener {
             val emailEditText: EditText = findViewById(R.id.editText)
             val passwordEditText: EditText = findViewById(R.id.editTextTextPassword)
 
@@ -34,9 +60,13 @@ class MainActivity : AppCompatActivity() {
                 navigateToHomeActivity()
             } else {
                 // Affichez un SnackBar avec un message d'erreur
-                showSnackBar("Erreur de connexion")
+                showSnackBar1("Erreur de connexion")
             }
         }
+
+       */
+
+
         emailEditText = findViewById(R.id.editText)
         passwordEditText = findViewById(R.id.editTextTextPassword1)
 
@@ -76,7 +106,7 @@ class MainActivity : AppCompatActivity() {
         emailEditText = findViewById(R.id.editText)
         passwordEditText = findViewById(R.id.editTextTextPassword1)
 
-        // Contrôle de saisie automatique pour l'email
+     // Contrôle de saisie automatique pour l'email
         emailEditText.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {
                 val email = s.toString().trim()
@@ -96,7 +126,7 @@ class MainActivity : AppCompatActivity() {
 
 
           passwordEditText.addTextChangedListener(object : TextWatcher {
-            override fun afterTextChanged(s: Editable?) {
+            override fun afterTextChanged(s: Editable) {
                 val password = s.toString()
 
                 if (password.isEmpty()){
@@ -109,8 +139,6 @@ class MainActivity : AppCompatActivity() {
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
         })
-
-
         //**************
 
     }
@@ -129,25 +157,30 @@ class MainActivity : AppCompatActivity() {
     private  fun validateLogin(email: String, password: String): Boolean {
         val isEmailValid = android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()
         val isPasswordValid = password.isNotEmpty()
-
         return isEmailValid && isPasswordValid
     }
-    private fun navigateToHomeActivity() {
-        // Implémentez la navigation vers HomeActivity ici
-        // Vous pouvez utiliser Intent pour naviguer vers l'activité suivante
-
-        // Exemple :
-         //val intent = Intent(this, HomeActivity::class.java)
-         //startActivity(intent)
-
-        // Pour l'exemple, affichons un Toast de succès
-        Toast.makeText(this, "Connexion réussie, navigation vers HomeActivity", Toast.LENGTH_SHORT).show()
+    private fun isEmailValid(email: String): Boolean {
+        return Patterns.EMAIL_ADDRESS.matcher(email).matches()
     }
 
-    private fun showSnackBar(message: String) {
-        // Affichez un SnackBar avec le message d'erreur
-        Snackbar.make(findViewById(android.R.id.content), message, Snackbar.LENGTH_SHORT).show()
+    private fun showSnackbar1(message: String) {
+        val snackbar = Snackbar.make(
+            findViewById(android.R.id.content),
+            message,
+            Snackbar.LENGTH_SHORT
+        )
+        snackbar.show()
     }
+    private fun extractEmailPrefix(email: String): String {
+        val atIndex = email.indexOf("@")
+        return if (atIndex != -1) {
+            email.substring(0, atIndex)
+        } else {
+            ""
+        }
+    }
+
+
     //controle saisie
 
     //controle saisie
