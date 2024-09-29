@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_height="80dp"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:textSize="20dp"
+        android:text="Enter the code sent to you by Email or Mobile number " />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Please enter your new password and confirm it"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:padding="2dp"
+        android:background="@drawable/edit_text_border"
+
+        android:drawableLeft="@drawable/cadenasred"
+        android:drawableRight="@drawable/eyered"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password" />
+    <EditText
+        android:id="@+id/editTextTextPassword1"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:padding="2dp"
+        android:background="@drawable/edit_text_border"
+
+        android:drawableLeft="@drawable/cadenasred"
+        android:drawableRight="@drawable/eyered"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Confirm Password" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_marginTop="40dp"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ff0000"
+        android:text="Submit" />
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Nascar</string>
+
+    <string name="news">News</string>
+    <string name="store">Store</string>
+    <string name="profile">Profile</string>
+
+    <string name="store1">Red Dead Redemption 2</string>
+    <string name="store2">Grand Theft Auto </string>
+    <string name="store3">The Legend Of Zelda</string>
+    <string name="store4">God Of War Ragnarok</string>
+    <string name="price1">70.0 $</string>
+    <string name="price2">30.0 $</string>
+    <string name="price3">90.0 $</string>
+    <string name="price4">30.0 $</string>
+
+    <string name="news1">TOP 10 Gaming News of the day</string>
+    <string name="news2">The Legend Of Zelda</string>
+    <string name="news3">God Of War Ragnarok</string>
+    <string name="newsDesc1">Are you looking for the most popular online games that have been played over time? You have just discovered the best list of the ten most popular online games from the more well-known and less specialized gaming types. With advanced technology and other new sources, online games are played all over the world.</string>
+    <string name="newsDesc2">Oubliez tout ce que vous savez sur es jeux The Legend of Zelda. Plongez dans un monde de découverte, exploration et aventure dans The Legend of Zelda </string>
+    <string name="newsDesc3">God of War Ragnarök est un jeu vidéo action-aventure développé par SIE Santa Monica Studio et édité par Sony Interactive Entertainment, sorti le 9 novembre 2022 sur PlayStation 4 et PlayStation 5.</string>
+
+    <string name="about"><b>NASCAR Cup Series</b>\n\nIn a historic shift for the sport, beginning in 2020 NASCAR’s premier series became known as the NASCAR Cup Series and featured four cornerstone brands as Premier Partners: Busch Beer, Coca-Cola®, GEICO and Xfinity. All four partners are prominently featured in multiple platforms across the sport, including integrations in broadcast, NASCAR digital and social channels, event entitlements, in-market promotions and at-track activations.</string>
+    <string name="name_here">Name Here</string>
+    <string name="email_here">Email Here</string>
+    <string name="info">Info</string>
+    <string name="logout">Logout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_layout" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav"
+        android:background="#ff0000"/>
+
+    <ImageButton
+        android:id="@+id/chart"
+        android:layout_width="57dp"
+        android:layout_height="51dp"
+        android:background="#F44336"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_layout"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar_layout"
+        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintStart_toStartOf="@+id/toolbar_layout"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_layout"
+        app:layout_constraintVertical_bias="0.461"
+        app:srcCompat="@drawable/baseline_shopping_cart_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/alert"
+        android:layout_width="57dp"
+        android:layout_height="50dp"
+        android:background="#F44336"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_layout"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar_layout"
+        app:layout_constraintStart_toEndOf="@+id/chart"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_layout"
+        app:srcCompat="@drawable/notifications"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

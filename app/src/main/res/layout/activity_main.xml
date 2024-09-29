@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="202dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="300dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/ic_logo" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:hint="Entrez votre adresse e-mail"
+        android:background="@drawable/edit_text_border"
+        android:padding="2dp"
+       android:drawableLeft="@drawable/mailred"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="40dp"
+        android:inputType="textEmailAddress"
+        />
+
+
+    <EditText
+        android:id="@+id/editTextTextPassword1"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:padding="2dp"
+        android:background="@drawable/edit_text_border"
+
+        android:drawableLeft="@drawable/cadenasred"
+        android:drawableRight="@drawable/eyered"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Saisissez votre mot de passe"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="364dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Remember Me"
+            android:textColor="#FF0000" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="forgot password ?"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textColor="#ff0000"
+            tools:layout_editor_absoluteX="174dp"
+            tools:layout_editor_absoluteY="576dp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="OR"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        tools:layout_editor_absoluteX="252dp"
+        tools:layout_editor_absoluteY="426dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#ff0000"
+        android:text="Login" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:padding="4dp" >
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:padding="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.104"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.861"
+            app:srcCompat="@drawable/facebook"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:padding="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.104"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.861"
+            app:srcCompat="@drawable/ic_btn_google"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@drawable/ic_btn_google" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="don't have an account ?"
+            android:textColor="#ff0000"
+            tools:layout_editor_absoluteX="268dp"
+            tools:layout_editor_absoluteY="647dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="1dp"
+            android:text="register now "
+            android:textColor="#ff0000"
+            tools:layout_editor_absoluteX="135dp"
+            tools:layout_editor_absoluteY="647dp" />
+    </LinearLayout>
+
+</LinearLayout>

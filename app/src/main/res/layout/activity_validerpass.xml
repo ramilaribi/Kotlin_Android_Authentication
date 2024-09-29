@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_marginTop="80dp"
+            android:layout_height="80dp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text="Enter the code sent to you by Email or Mobile number " />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/editTextNumberSigned"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberSigned"
+                android:textAlignment="center"
+                android:textColor="#ff0000"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                tools:ignore="EditableContentDescCheck,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/editTextNumberSigned1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberSigned"
+                android:textAlignment="center"
+                android:textColor="#ff0000"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/editTextNumberSigned2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberSigned"
+                android:textAlignment="center"
+                android:textColor="#ff0000"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/editTextNumberSigned3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberSigned"
+                android:textAlignment="center"
+                android:textColor="#ff0000"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/button2"
+            android:layout_marginTop="40dp"
+            android:layout_width="350dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ff0000"
+            android:text="Verify" />
+        <TextView
+            android:id="@+id/textView5"
+            android:linksClickable="true"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:text="didn't recive a verification code ? " />
+
+        <TextView
+            android:id="@+id/textView"
+            android:linksClickable="true"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:textColor="#ff0000"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:text=" Resend Code " />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
